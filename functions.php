@@ -123,8 +123,10 @@ class FoundationTheme
             register_sidebar([
                 'name' => $sidebar['name'],
                 'id' => $sidebar['id'],
-                'before_widget' => '<aside id="%1$s" class="%2$s">',
-                'after_widget' => '</aside>'
+                'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+                'after_widget' => '</aside>',
+                'before_title' => '<h3>',
+                'after_title' => '</h3>'
             ]);
         }
     }
