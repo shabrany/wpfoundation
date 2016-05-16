@@ -17,14 +17,9 @@
                     <?php wp_nav_menu([
                         'theme_location' => 'main-navigation',
                         'depth' => 2,
-                        'menu_class' => 'menu'
+                        'menu_class' => 'menu align-right'
                     ]); ?>
                 </div>
             </div>
         </header>
         <main class="main-content">
-            
-            
-       
-
-
