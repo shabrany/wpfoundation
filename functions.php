@@ -20,10 +20,22 @@ class FoundationTheme
         $this->add_location('footer-nav', 'This menu is displayed at the bottom of the page');
 
         $this->add_style('foundation', 'css/foundation.min.css');
+        $this->add_style('style', 'css/styles.css');
 
-        $this->add_sidebar('primary-sidebar', 'Default sidebar');
+        $this->define_sidebars();
 
         $this->init_actions();
+    }
+    
+    /**
+     * Define the sidebars
+     */
+    public function define_sidebars() {
+        $this->add_sidebar('primary-sidebar', 'Default sidebar');
+        
+        for ($i=1; $i <= 3; $i++) { 
+            $this->add_sidebar("footer-column-{$i}", "Column footer {$i}");
+        }   
     }
 
     /**
